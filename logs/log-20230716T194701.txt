@@ -1,0 +1,11 @@
+19:47:02 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution firefox=115 in cache (valid until 20:45:59 16/07/2023 IDT)
+19:47:02 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution firefox115=0.33.0 in cache (valid until 19:45:59 17/07/2023 IDT)
+19:47:02 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+19:47:02 DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver geckodriver 0.33.0 found in cache
+19:47:02 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\heliu\.cache\selenium\geckodriver\win64\0.33.0\geckodriver.exe
+19:47:06 INFO  TestBase - Method testTitleH1 is started
+19:47:06 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:47:06 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:47:06 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //h1
+19:47:06 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //h1 is found
+19:47:06 INFO  TestBase - =====================end==method======================== 

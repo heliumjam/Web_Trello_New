@@ -1,0 +1,59 @@
+19:05:41 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome=114 in cache (valid until 20:03:47 16/07/2023 IDT)
+19:05:41 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome114=114.0.5735.90 in cache (valid until 18:02:24 17/07/2023 IDT)
+19:05:41 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+19:05:41 DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver chromedriver 114.0.5735.90 found in cache
+19:05:41 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\heliu\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+19:05:43 INFO  TestBase - Method loginTestPositive is started
+19:05:43 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:05:43 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:05:44 INFO  manager.TestNgListener - Test loginTestPositive invoked
+19:05:44 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:05:44 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:05:45 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:05:45 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:05:45 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:05:45 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:05:45 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:05:45 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:05:45 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:05:47 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:05:47 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:05:47 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:05:47 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='login-submit']
+19:05:47 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='login-submit'] is found
+19:05:47 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:05:52 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:05:52 INFO  manager.HelperBase - actual result: РАБОЧЕЕ ПРОСТРАНСТВО TRELLOexpected result: WORKSPACE
+19:05:52 INFO  manager.TestNgListener - Test loginTestPositive failed: java.lang.AssertionError: expected [true] but found [false]
+19:05:52 INFO  TestBase - =====================end==method======================== 
+19:05:52 INFO  TestBase - Method loginTestPositive is started
+19:05:52 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:05:52 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:05:52 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='header-member-menu-button']
+19:05:52 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='header-member-menu-button'] is found
+19:05:53 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='account-menu-logout']
+19:05:53 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='account-menu-logout'] is found
+19:05:53 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='logout-submit']
+19:05:53 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='logout-submit'] is found
+19:05:54 INFO  manager.TestNgListener - Test loginTestPositive invoked
+19:05:54 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:05:56 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:05:57 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:05:57 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:05:57 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:05:57 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:05:57 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:05:57 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:05:58 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:05:58 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:05:58 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:05:58 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:05:58 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:05:58 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:05:59 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='login-submit']
+19:05:59 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='login-submit'] is found
+19:05:59 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:06:02 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:06:02 INFO  manager.HelperBase - actual result: РАБОЧЕЕ ПРОСТРАНСТВО TRELLOexpected result: WORKSPACE
+19:06:02 INFO  manager.TestNgListener - Test loginTestPositive failed: java.lang.AssertionError: expected [true] but found [false]
+19:06:02 INFO  TestBase - =====================end==method======================== 

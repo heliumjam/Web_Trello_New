@@ -6,22 +6,22 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+import java.util.logging.Logger;
+
 
 public class HelperLogin extends HelperBase{
-    // cv726nkq1q@kzccv.com
+	
     public HelperLogin(WebDriver driver){
         super(driver);
     }
 
-    By OPEN_LOGIN_PAGE_BTN =
-            By.xpath("//a[contains(text(), 'Log in')]");
+    By OPEN_LOGIN_PAGE_BTN = By.xpath("//a[contains(text(), 'Log in')]");
     By INPUT_EMAIL = By.xpath("//input[@id='user']");
     By BTN_LOGIN = By.xpath("//input[@id='login']");
     By INPUT_PASSWORD = By.xpath("//input[@name='password']");
-    By CONFIRM_PASSWORD_BTN =
-            By.xpath("//button[@id='login-submit']");
-    By TEXT_WORKSPACE_AFTER_LOGIN =
-            By.xpath("//span[@data-testid='home-team-tab-name']");
+    By CONFIRM_PASSWORD_BTN = By.xpath("//button[@id='login-submit']");
+    By TEXT_WORKSPACE_AFTER_LOGIN = By.xpath("//span[@data-testid='home-team-tab-name']");
 
     /*
     1. open sign up page
@@ -40,24 +40,21 @@ public class HelperLogin extends HelperBase{
         clickConfirmPasswordButton();
     }
 
-    public void openLoginPage(){
-    click(OPEN_LOGIN_PAGE_BTN);
-    }
-    public void enterEmailLogin(UserDTO userDTO){
-    type(INPUT_EMAIL,userDTO
-            .getEmail());
+    public void openLoginPage() {
+        click(OPEN_LOGIN_PAGE_BTN);
     }
 
+    public void enterEmailLogin(UserDTO userDTO) {
+        type(INPUT_EMAIL, userDTO.getEmail());
+    }
 
     public void clickContinueLogin() {
         click(BTN_LOGIN);
     }
-
+	
     public void typePasswordLogin(UserDTO userDTO, WebDriverWait wait) {
         WebElement element =
-                wait.until(ExpectedConditions
-                        .visibilityOfElementLocated(INPUT_PASSWORD));
-//        pause(5000);
+                wait.until(ExpectedConditions.visibilityOfElementLocated(INPUT_PASSWORD));
         type(INPUT_PASSWORD, userDTO.getPassword());
     }
 
@@ -84,15 +81,27 @@ public class HelperLogin extends HelperBase{
         }
     }
 
-    public boolean validateLoginSuccess() {
+   public boolean validateLoginSuccess2() {
         return isElementEnable(TEXT_WORKSPACE_AFTER_LOGIN);
     }
+	
+	public boolean validateLoginSuccess() {
+        String expectedResult = "workspace".toUpperCase().trim();
+        String actualResult = getText(TEXT_WORKSPACE_AFTER_LOGIN).trim().toUpperCase();
+        if(actualResult.contains(expectedResult)) {
+            return true;
+        } else {
+            logger.info("actual result: " + actualResult +
+                    "expected result: " + expectedResult);
+            return false;
+        }
+    }
 
-    public boolean validatePasswordInputEnable(WebDriverWait wait) {
+     public boolean validatePasswordInputEnable(WebDriverWait wait) {
         WebElement element =
-                wait.until(ExpectedConditions
-                        .visibilityOfElementLocated(INPUT_PASSWORD));
+                wait.until(ExpectedConditions.visibilityOfElementLocated(INPUT_PASSWORD));
         return isElementEnable(INPUT_PASSWORD);
     }
+
 
 }

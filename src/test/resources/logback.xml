@@ -1,0 +1,45 @@
+<configuration>
+    <!-- Insert the current time formatted as "yyyyMMdd'T'HHmmss" under
+           the key "bySecond" into the logger context. This value will be
+           available to all subsequent configuration elements. -->
+    <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
+    <!--    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">-->
+    <!--        &lt;!&ndash; encoders are assigned the type-->
+    <!--             ch.qos.logback.classic.encoder.PatternLayoutEncoder by default &ndash;&gt;-->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/log-${bySecond}.txt</file>
+        <append>false</append>
+        <!-- set immediateFlush to false for much higher logging throughput -->
+        <immediateFlush>true</immediateFlush>
+        <!-- encoders are assigned the type
+             ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+        <encoder>
+            <!--            <pattern>%d{HH:mm:ss} [%thread] %-5level %logger{36} -%kvp- %msg%n</pattern>-->
+            <pattern>%d{HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="debug">
+        <!--        <appender-ref ref="STDOUT" />-->
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>
+
+        <!--<configuration>-->
+
+        <!--<appender name="FILE" class="ch.qos.logback.core.FileAppender">-->
+        <!--    <file>testFile.log</file>-->
+        <!--    <append>true</append>-->
+        <!--    &lt;!&ndash; set immediateFlush to false for much higher logging throughput &ndash;&gt;-->
+        <!--    <immediateFlush>true</immediateFlush>-->
+        <!--    &lt;!&ndash; encoders are assigned the type-->
+        <!--         ch.qos.logback.classic.encoder.PatternLayoutEncoder by default &ndash;&gt;-->
+        <!--    <encoder>-->
+        <!--        <pattern>%-4relative [%thread] %-5level %logger{35} -%kvp- %msg%n</pattern>-->
+        <!--    </encoder>-->
+        <!--</appender>-->
+
+        <!--<root level="DEBUG">-->
+        <!--    <appender-ref ref="FILE" />-->
+        <!--</root>-->
+        <!--</configuration>-->

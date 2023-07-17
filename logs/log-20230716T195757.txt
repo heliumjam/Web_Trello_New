@@ -1,0 +1,102 @@
+19:57:57 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome=114 in cache (valid until 20:03:47 16/07/2023 IDT)
+19:57:57 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome114=114.0.5735.90 in cache (valid until 18:02:24 17/07/2023 IDT)
+19:57:57 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+19:57:57 DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver chromedriver 114.0.5735.90 found in cache
+19:57:57 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\heliu\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+19:57:59 INFO  TestBase - Method loginTestPasswordInput is started
+19:57:59 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:57:59 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:58:00 INFO  manager.TestNgListener - Test loginTestPasswordInput invoked
+19:58:00 INFO  TestBase - start test loginTestPasswordInput
+19:58:00 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:58:00 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:58:01 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:58:01 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:58:01 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:58:01 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:58:01 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:58:01 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:58:02 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:58:03 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:58:03 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:58:03 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:58:03 INFO  manager.TestNgListener - Test loginTestPasswordInput successful
+19:58:03 INFO  TestBase - =====================end==method======================== 
+19:58:03 INFO  TestBase - Method loginTestPositive is started
+19:58:03 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:58:03 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:58:04 INFO  manager.TestNgListener - Test loginTestPositive invoked
+19:58:04 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:58:04 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:58:04 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:58:04 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:58:04 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:58:04 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:58:04 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:58:04 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:58:05 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:58:05 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:58:06 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:58:06 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:58:06 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:58:06 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:58:06 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='login-submit']
+19:58:06 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='login-submit'] is found
+19:58:06 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:58:11 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:58:11 INFO  manager.TestNgListener - Test loginTestPositive successful
+19:58:11 INFO  TestBase - =====================end==method======================== 
+19:58:11 INFO  TestBase - Method loginTestPositive is started
+19:58:11 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:58:11 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:58:11 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='header-member-menu-button']
+19:58:11 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='header-member-menu-button'] is found
+19:58:11 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='account-menu-logout']
+19:58:11 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='account-menu-logout'] is found
+19:58:12 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='logout-submit']
+19:58:12 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='logout-submit'] is found
+19:58:12 INFO  manager.TestNgListener - Test loginTestPositive invoked
+19:58:12 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:58:22 INFO  manager.WebDriverListener - Something went wrong!
+19:58:22 INFO  manager.WebDriverListener - Cannot locate an element using xpath=//a[contains(text(), 'Log in')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIRI', ip: '10.0.1.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: driver.version: EventFiringWebDriver
+19:58:22 INFO  manager.WebDriverListener - org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[contains(text(), 'Log in')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIRI', ip: '10.0.1.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: driver.version: EventFiringWebDriver
+19:58:22 INFO  manager.TestNgListener - Test loginTestPositive failed: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIRI', ip: '10.0.1.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\heliu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c039d65fc20cbe71b0d593b04777875d
+19:58:22 INFO  TestBase - =====================end==method======================== 
+19:58:23 INFO  TestBase - Method testTitleH1 is started
+19:58:23 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:58:23 INFO  manager.WebDriverListener - Something went wrong!
+19:58:23 INFO  manager.WebDriverListener - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIRI', ip: '10.0.1.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\heliu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c039d65fc20cbe71b0d593b04777875d
+*** Element info: {Using=xpath, value=//span[@data-testid='home-team-tab-name']}
+19:58:23 INFO  manager.WebDriverListener - org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIRI', ip: '10.0.1.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\heliu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c039d65fc20cbe71b0d593b04777875d
+*** Element info: {Using=xpath, value=//span[@data-testid='home-team-tab-name']}
+19:58:23 INFO  manager.TestNgListener - Test testTitleH1 invoked
+19:58:23 INFO  TestBase - =====================end==method======================== 

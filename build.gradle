@@ -12,17 +12,37 @@ repositories {
 dependencies {
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     implementation group: 'org.testng', name: 'testng', version: '7.4.0'
+
     compileOnly 'org.projectlombok:lombok:1.18.28'
     annotationProcessor 'org.projectlombok:lombok:1.18.28'
 
     testCompileOnly 'org.projectlombok:lombok:1.18.28'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
-//
-    implementation 'ch.qos.logback:logback-classic:1.2.11'
+
+    implementation 'ch.qos.logback:logback-classic:1.3.7'
 
     implementation 'io.github.bonigarcia:webdrivermanager:5.3.2'
 }
 
 test {
     useTestNG()
+}
+
+task myTest(type: Test) {
+    useTestNG() {
+        def groups = System.getProperty('groups')
+        if(groups != null){
+            includeGroups groups
+        }
+
+        def suite = System.getProperty('suite','')
+        if(suite.equals('login')) {
+            suites 'src/test/resources/testng.xml'
+        } else {
+            suites 'src/test/resources/mainpage.xml'
+        }
+    }
+    if(project.hasProperty('browser')){
+        systemProperty 'browser', "$browser"
+    }
 }
