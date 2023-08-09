@@ -82,15 +82,21 @@ public class HelperBase {
 		// return element.isEnabled();
 //___________________________________________________________________________
         // second solution
-	changeImplicitlyTime(0); //TODO
-        // here need to be carefully and to be sure that we get Implicitly Time back to 60 seconds
-        // and to use it only - when we know that the page downloaded and we do not need to wait it
-        // get run time for all tests 41 seconds, without changing -> 2 m 42 sec
-        List<WebElement> elements = driver.findElements(locator);
-        changeImplicitlyTime(60);
+        List<WebElement> elements = null;
+        try {
+            changeImplicitlyTime(0);
+            // here need to be carefully and to be sure that we get Implicitly Time back to 60 seconds
+            // and to use it only - when we know that the page downloaded and we do not need to wait it
+            // get run time for all tests 41 seconds, without changing -> 2 m 42 sec
+            elements = driver.findElements(locator);
+            //  changeImplicitlyTime(60);
+        } catch (Exception e) {
+            //  changeImplicitlyTime(60);
+        } finally {
+            changeImplicitlyTime(60);
+        }
         return elements.size() != 0;
-	
-	}
+    }
 	
 	    public String getText(By locator) {
         return driver.findElement(locator).getText();

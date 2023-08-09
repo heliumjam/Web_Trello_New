@@ -23,6 +23,8 @@ public class HelperLogin extends HelperBase{
     By CONFIRM_PASSWORD_BTN = By.xpath("//button[@id='login-submit']");
     By TEXT_WORKSPACE_AFTER_LOGIN = By.xpath("//span[@data-testid='home-team-tab-name']");
 
+    By TEXT_INCORRECT_PASSWORD = By.xpath("//div[@data-testid='form-error--content']/span/span");
+
     /*
     1. open sign up page
     2. enter email
@@ -81,11 +83,11 @@ public class HelperLogin extends HelperBase{
         }
     }
 
-   public boolean validateLoginSuccess2() {
+    public boolean validateLoginSuccess2() {
         return isElementEnable(TEXT_WORKSPACE_AFTER_LOGIN);
     }
-	
-	public boolean validateLoginSuccess() {
+
+    public boolean validateLoginSuccess() {
         String expectedResult = "workspace".toUpperCase().trim();
         String actualResult = getText(TEXT_WORKSPACE_AFTER_LOGIN).trim().toUpperCase();
         if(actualResult.contains(expectedResult)) {
@@ -97,11 +99,22 @@ public class HelperLogin extends HelperBase{
         }
     }
 
-     public boolean validatePasswordInputEnable(WebDriverWait wait) {
+    public boolean validatePasswordIncorrect() {
+        String expectedResult = "Incorrect email address and / or password.".toUpperCase().trim();
+        String actualResult = getText(TEXT_INCORRECT_PASSWORD).trim().toUpperCase();
+        if(actualResult.contains(expectedResult)) {
+            return true;
+        } else {
+            logger.info("actual result: " + actualResult +
+                    "expected result: " + expectedResult);
+            return false;
+        }
+    }
+
+    public boolean validatePasswordInputEnable(WebDriverWait wait) {
         WebElement element =
                 wait.until(ExpectedConditions.visibilityOfElementLocated(INPUT_PASSWORD));
         return isElementEnable(INPUT_PASSWORD);
     }
-
 
 }

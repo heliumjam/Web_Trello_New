@@ -1,0 +1,482 @@
+19:44:22 DEBUG i.g.b.wdm.cache.ResolutionCache - Removing resolution firefox=115 from cache (expired on Thu Jul 20 20:05:40 IDT 2023)
+19:44:22 DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000001 preparing request execution
+19:44:22 DEBUG o.a.h.c.h.impl.classic.ProtocolExec - ex-0000000001 target auth state: UNCHALLENGED
+19:44:22 DEBUG o.a.h.c.h.impl.classic.ProtocolExec - ex-0000000001 proxy auth state: UNCHALLENGED
+19:44:22 DEBUG o.a.h.c.h.impl.classic.ConnectExec - ex-0000000001 acquiring connection with route {s}->https://raw.githubusercontent.com:443
+19:44:22 DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000001 acquiring endpoint (3 MINUTES)
+19:44:22 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000001 endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+19:44:22 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000001 endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+19:44:22 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000001 acquired ep-0000000001
+19:44:22 DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000001 acquired endpoint ep-0000000001
+19:44:22 DEBUG o.a.h.c.h.impl.classic.ConnectExec - ex-0000000001 opening connection {s}->https://raw.githubusercontent.com:443
+19:44:22 DEBUG o.a.h.c.h.i.c.InternalHttpClient - ep-0000000001 connecting endpoint (null)
+19:44:22 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000001 connecting endpoint to https://raw.githubusercontent.com:443 (30 SECONDS)
+19:44:22 DEBUG o.a.h.c.h.i.i.DefaultHttpClientConnectionOperator - raw.githubusercontent.com resolving remote address
+19:44:23 DEBUG o.a.h.c.h.i.i.DefaultHttpClientConnectionOperator - raw.githubusercontent.com resolved to [raw.githubusercontent.com/185.199.111.133, raw.githubusercontent.com/185.199.108.133, raw.githubusercontent.com/185.199.110.133, raw.githubusercontent.com/185.199.109.133]
+19:44:23 DEBUG o.a.h.c.h.i.i.DefaultHttpClientConnectionOperator - raw.githubusercontent.com:443 connecting null->raw.githubusercontent.com/185.199.111.133:443 (30 SECONDS)
+19:44:23 DEBUG o.a.h.c.h.s.SSLConnectionSocketFactory - Connecting socket to raw.githubusercontent.com/185.199.111.133:443 with timeout 30 SECONDS
+19:44:23 DEBUG o.a.h.c.h.s.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.2]
+19:44:23 DEBUG o.a.h.c.h.s.SSLConnectionSocketFactory - Enabled cipher suites: [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+19:44:23 DEBUG o.a.h.c.h.s.SSLConnectionSocketFactory - Starting handshake (null)
+19:44:23 DEBUG o.a.h.c.h.s.SSLConnectionSocketFactory - Secure session established
+19:44:23 DEBUG o.a.h.c.h.s.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+19:44:23 DEBUG o.a.h.c.h.s.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+19:44:23 DEBUG o.a.h.c.h.s.SSLConnectionSocketFactory -  peer principal: CN=*.github.io, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
+19:44:23 DEBUG o.a.h.c.h.s.SSLConnectionSocketFactory -  peer alternative names: [*.github.io, github.io, *.github.com, github.com, www.github.com, *.githubusercontent.com, githubusercontent.com]
+19:44:23 DEBUG o.a.h.c.h.s.SSLConnectionSocketFactory -  issuer principal: CN=DigiCert TLS RSA SHA256 2020 CA1, O=DigiCert Inc, C=US
+19:44:23 DEBUG o.a.h.c.h.i.i.DefaultManagedHttpClientConnection - http-outgoing-0 set socket timeout to 3 MINUTES
+19:44:23 DEBUG o.a.h.c.h.i.i.DefaultHttpClientConnectionOperator - raw.githubusercontent.com:443 connected null->raw.githubusercontent.com/185.199.111.133:443 as http-outgoing-0
+19:44:23 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000001 connected http-outgoing-0
+19:44:23 DEBUG o.a.h.c.h.i.c.InternalHttpClient - ep-0000000001 endpoint connected
+19:44:23 DEBUG o.a.h.c.h.i.classic.MainClientExec - ex-0000000001 executing GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+19:44:23 DEBUG o.a.h.c.h.protocol.RequestAddCookies - ex-0000000001 Cookie spec selected: strict
+19:44:23 DEBUG o.a.h.c.h.i.c.InternalHttpClient - ep-0000000001 start execution ex-0000000001
+19:44:23 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000001 executing exchange ex-0000000001 over http-outgoing-0
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> accept-encoding: gzip, deflate, br
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> cache-control: max-age=0
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> connection: keep-alive
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: raw.githubusercontent.com
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "connection: keep-alive[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Length: 723[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "ETag: W/"e82b438271e9e8680c688b0b680efd0bdd22faa6d6f0a32fc1fd8accc486b67e"[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-GitHub-Request-Id: 2D5C:755A:2E636E:35DE41:64B62893[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Date: Sat, 22 Jul 2023 16:44:24 GMT[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Served-By: cache-mrs10550-MRS[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Cache: HIT[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Cache-Hits: 2[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Timer: S1690044264.199505,VS0,VE0[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Vary: Authorization,Accept-Encoding,Origin[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Cross-Origin-Resource-Policy: cross-origin[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Fastly-Request-ID: 7faac44e5f3a024560ee18245079ce9899a51ea6[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Expires: Sat, 22 Jul 2023 16:49:24 GMT[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Source-Age: 118[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Connection: keep-alive
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Length: 723
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Cache-Control: max-age=300
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << ETag: W/"e82b438271e9e8680c688b0b680efd0bdd22faa6d6f0a32fc1fd8accc486b67e"
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Frame-Options: deny
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-GitHub-Request-Id: 2D5C:755A:2E636E:35DE41:64B62893
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Encoding: gzip
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Accept-Ranges: bytes
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Sat, 22 Jul 2023 16:44:24 GMT
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Via: 1.1 varnish
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Served-By: cache-mrs10550-MRS
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Cache: HIT
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Cache-Hits: 2
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Timer: S1690044264.199505,VS0,VE0
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Vary: Authorization,Accept-Encoding,Origin
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Cross-Origin-Resource-Policy: cross-origin
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Fastly-Request-ID: 7faac44e5f3a024560ee18245079ce9899a51ea6
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Expires: Sat, 22 Jul 2023 16:49:24 GMT
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Source-Age: 118
+19:44:23 DEBUG o.a.h.c.h.i.classic.MainClientExec - ex-0000000001 connection can be kept alive for 3 MINUTES
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffffb5]V]o[0xffffffda]0[0x14]}[0xffffffe7]W\[0xffffff81]*[0xffffffb5][0x12][0x1f][[M[0xffffffd3]$[0x1e]hF[0xffffffbb]i [0x18][0xffffffb4][0xffffffdd]&[0xfffffff9][0xffffffc5]$7[0xffffffc1]R[0x12]#;[0xffffff94]v[0xffffffbf]~[0xffffffb6][0xfffffff3]1[0xffffff92][0xffffff9a][0xffffffc1][0x1a]x[0xffffffcb][0xffffffb5][0xffffffaf][0xffffffcf]9[0xffffffbe][0xfffffff7]8v[0xb][0x1c][0x1e]E4[0xfffffff6]$x4[0xffffffa1][0xb]*[0xffffffb1][0xffffffd1][0xffffff82][0xfffffffb]%[0xffffff93][0xffffffe0][0xffffffb3][0x10][0xffffffc1][0xffffffe5]qBY,!Y[0xffffffea] KM8,[0x10][0xfffffff0][0x19][0xffffffdd]u[0xffffff82][0x1e][0xffffffb0][0xffffffd8]L[0xffffffcb]%[0xffffff86][0xffffffa1][0xe][0xffffffb8][0xfffffff0]P[0xffffffe8]$[0xf][0x13]t[0x13]3[0xfffffff9][0xffffff84]B2[0xffffffae][0xffffffe6]|@[0xfffffff5][0x1d][0x8][0xffffffc4][0x18][0x16][0xffffff82]o[0xffffffa4][0xffffff9a]P[0xffffff94][0xffffffe7][0xffffffce]R[0xfffffff0][0x8][0xffffffdb]p[0xffffffcb][0x4][0xfffffffa][0xfffffffc][0xffffffb9][\r][0xffffff93][0x15][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0xffffffda][0xffffff86][0xffffffa1][0x17][0xffffffa8]Q3[0xffffffcb][0xffffffd6][0xffffffd1][0xffffff85][0xffffffc6][0xfffffff7][0xffffff98][0xffffffef][0xffffffa3][0xffffffc0]8[0x1][0xffffffae]s[0x12][0x16][0x7] _d[0xffffff82][0xffffff91][0xffffff84][0xfffffff3][0x1f],[0xfffffff6][0x14]j[0x1b]F,^+[0xffffff98]1ua2[0xffffffbf]h([0xffffff8e][0xffffff94][0xffffffa2][0xffffff91]m[0xffffffa3][0xffffffeb][0xffffff9a][0xffffffb0][0xffffffbb]I[0x17]t[0xffffffdf][0xffffffbd][0xffffffef][0xffffffbb][0xffffff91][0xffffffd7]U[0xffffffbb][0xffffff82][0xffffff9e][0x3][0xffffff9b][0xffffff88][0xffffffb9][0xffffffa6]$[0xffffffa6][0xc][0xffffff9b][0xffffffa5][0xffffffe2][0xffffff83][0xffffff98]F[0xffffffd8]o[0xffffff9e]Mg[0xffffff93][0xffffffbb][0xffffffd9]`|[0xfffffffb]u4[0xffffff9c][0x7f]"}B[0xffffffce][0x8][0xffffffb9][0xffffffe3]<[0x8][0xffffff91][0xffffff90][0xffffff94][0xffffff82][0xffffff90][0xffffffc1]j[0x15]2WI[0xffffffe3]1![0x19][0xffffff91]BnB[0xffffff80][0x9]<f[0xffffffb5][0xffffffe8]=[0xffffffd1]p[0xffffffbd][[0xffffffcf][0xffffffe5][0x1b][0xfffffff4][0xffffff9c][0xffffffff][0xfffffffc][0xfffffff8][0xffffffe1][0xffffffe2][0xffffff94][0xffffffa2][0xffffffae][0xe][0x14]5[0xffffff9a]8[0xffffff83][0xffffffd1]`:[0xfffffffd]<[0xffffffb8][0x1f][0xffffff9c]R[0xffffffcf]u[0x7f]6[0xffffffbc][0xffffff83][0xffffffef][0xf][0xffffffc3][0xffffffd9]/[0xfffffff8][0xfffffff2][0xffffffcd]y s[0xffffffee]'[0x1b]*0g[0xffffffcb][0xffffffc8]nF7H][0xffffff83][0xffffff97]{[0xffffffb1]Q[0x5][\r][0xffffffb5]c[0xffffffb4][0xf][0x2][0xffffffb3][0xffffffb4][0xffffff93][0xe]C[0xffffffa7][0xffffffb3]kAD][0xffffff9d][0xffffffde][0xffffffdb][0xffffffda][0xffffff88][0xffffffec][0xffffffa5][0xffffffbc][0xffffff99][0xffffffd9][0xffffffba]t[0xffffffb5][0xffffffea]9[0xffffffea][0x10])[0xffffffb7][0xffffffca][0xffffff9e][0xfffffff2][0xffffffe2]d^N[0xffffffd8]FW[0x16][0xffffffcd][0xffffffdc]_[0x10][0xfffffff9]i|[0x1c][0xffffff93][0xffffff8e][0xfffffff9]o[0x16][0xffffff86]4'!$G[0xffffffdf]W[0xfffffff4]W*j[[0xfffffff3]xR[0xffffffae][0xffffffb6][0xc][0xffffffd0],; #[0xffffffa9][0xffffff92]5[0xffffffb5][0x7][0xffffff9c][0xffffffb5][0xffffffd0][0x7f][0xffffff90][0xffffffc7]jgs[0xfffffffc][0xffffffc2][0xb][0xffffffd9][0x0]t[0xffffff9e]^'Y[0xfffffffb][0xffffff9f][0xffffffb1][0xffffffd8]:[0xffffffbf][0xffffff8d][0xffffffa5][0xffffff9a][0xffffffad][0x7f]m[0x5]&[0xffffffaa][0xffffffa0]^[0xffffff9b][0xffffffcb][0x5]f[0xffffffae][0xffffffe0]RU[0xffffff82][0x10]MS9l[0xffffff91]4t[0xfffffffb][0xffffff8a]][0xffffffd6][0xfffffff4][0xffffff96][0xffffffa6][0xffffff9f]P[0xffffffce][0xffffffd5][0xffffffce][0xffffff93][0xffffffff][0xffffff97][0xffffffcc]p[0xfffffffd][0xfffffff3][0xffffffe8][0x1b][0xffffffcc][0xffffffa2][0xffffffd9]Q[0xffffffbe][0xffffffb2][0xffffffa3][0xffffffc7]m'[0xffffffdf][0xffffffe4][[0xfffffffb]^[0xffffffb0][0xffffff9a][0xffffffbe][0xffffffda][0xffffffda]_[0xffffffce][0xffffff80][0xffffffd2][0xffffffc1]7[0xffffffb7]][0xffffffc1]b[0xffffffee][0xffffffb5][0xffffffff]w[0xffffff83][0xffffffed][0xffffffa7];[0x15]<[0x10]4[0xffffff92][0xffffff84][0x18][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "BB[0xffffffba][0xffffff8e]][0xffffffb5]jo[0xffffffb9]+"[0xffffffea][0xffffffb4][0xffffffff]h"[0xffffffea]\?5[0xffffffa9][0xffffffaf]k[0xffffffec][0xffffffff]P[0xffffffea][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "w[0xffffffe1]K[0x13][0xffffffda][0xffffffec][0xffffff98][0xffffffe6]Y[0xfffffffd]h8m6[0xffffff9c]T[0xffffffc1][0xfffffff2][0xffffffa7][0xffffff91]z_[0xffffff95]o85p[0x1c][0x13][0xffffffe6][0xfffffff0]5[0xffffffee][0xfffffffc][0xffffff92][0xffffff96][0xffffffda][0xfffffff7][0xffffffcf][0xffffffb1][0x5][0x1d][0xffffffea]K[0xffffff9b]9[0xffffff8e][0xffffffad]e[0xfffffff7][0xffffff93][0xffffffa8]`[0xffffffda][0xffffffff][0x1a][0xffffffd2][0xffffff88][0xffffff85][0xfffffffd][0xfffffff2][0xffffff91]N[0xfffffff6]`[0xffffffdf]2[0xffffffcf][0xffffffae]E[0xffffff97][0xffffffc5][0xffffffa2][0xffffff9d][0xffffffef]'[0xffffff9d]mun.[0xffffffd3]f^[0xffffffc7][0xffffff82][0xffffffda][0xffffff82]9[0xfffffff5][0xffffffa9]`[0x5][0xffffffbc]4[0xffffffa1][0x1d]<M[0xffffffb5]A[0xffffffa7]3[[0xffffffc0][0x7f][0x0][0xffffffc1][0xffffffd0]$[0xffffff85][0x1d][\r][0x0][0x0]"
+19:44:23 DEBUG o.a.h.c.h.i.c.InternalHttpClient - ep-0000000001 releasing valid endpoint
+19:44:23 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000001 releasing endpoint
+19:44:23 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000001 connection http-outgoing-0 can be kept alive for 3 MINUTES
+19:44:23 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000001 connection released [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+19:44:23 DEBUG i.g.b.wdm.versions.VersionDetector - Detecting firefox version using online commands.properties
+19:44:23 DEBUG i.g.bonigarcia.wdm.versions.Shell - Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%PROGRAMFILES:\=\\%\\Mozilla, Firefox\\firefox.exe", get, Version, /value]
+19:44:23 DEBUG i.g.bonigarcia.wdm.versions.Shell - Result: Version=115.0.2.8591
+19:44:23 DEBUG i.g.b.wdm.cache.ResolutionCache - Removing resolution firefox115=0.33.0 from cache (expired on Fri Jul 21 19:05:40 IDT 2023)
+19:44:23 DEBUG i.g.b.wdm.versions.VersionDetector - Getting driver version for firefox115 from online versions.properties
+19:44:23 DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000002 preparing request execution
+19:44:23 DEBUG o.a.h.c.h.impl.classic.ProtocolExec - ex-0000000002 target auth state: UNCHALLENGED
+19:44:23 DEBUG o.a.h.c.h.impl.classic.ProtocolExec - ex-0000000002 proxy auth state: UNCHALLENGED
+19:44:23 DEBUG o.a.h.c.h.impl.classic.ConnectExec - ex-0000000002 acquiring connection with route {s}->https://raw.githubusercontent.com:443
+19:44:23 DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000002 acquiring endpoint (3 MINUTES)
+19:44:23 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000002 endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+19:44:23 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000002 endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+19:44:23 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000002 acquired ep-0000000002
+19:44:23 DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000002 acquired endpoint ep-0000000002
+19:44:23 DEBUG o.a.h.c.h.i.classic.MainClientExec - ex-0000000002 executing GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1
+19:44:23 DEBUG o.a.h.c.h.protocol.RequestAddCookies - ex-0000000002 Cookie spec selected: strict
+19:44:23 DEBUG o.a.h.c.h.i.c.InternalHttpClient - ep-0000000002 start execution ex-0000000002
+19:44:23 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000002 executing exchange ex-0000000002 over http-outgoing-0
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> accept-encoding: gzip, deflate, br
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> cache-control: max-age=0
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> connection: keep-alive
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: raw.githubusercontent.com
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "connection: keep-alive[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Length: 1592[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "ETag: W/"6491455d22a0b1c9f41db367f9402c53615bff135fde7080d63626aba742b88e"[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-GitHub-Request-Id: 5B8E:5D46:1482FD9:17A41FD:64B225DE[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Date: Sat, 22 Jul 2023 16:44:24 GMT[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Served-By: cache-mrs10550-MRS[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Cache: HIT[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Cache-Hits: 1[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Timer: S1690044264.474185,VS0,VE4[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Vary: Authorization,Accept-Encoding,Origin[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Cross-Origin-Resource-Policy: cross-origin[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Fastly-Request-ID: ac2b189cdba7d2288032121203f70a8bda98a24f[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Expires: Sat, 22 Jul 2023 16:49:24 GMT[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Source-Age: 111[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[\r][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Connection: keep-alive
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Length: 1592
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Cache-Control: max-age=300
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << ETag: W/"6491455d22a0b1c9f41db367f9402c53615bff135fde7080d63626aba742b88e"
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Frame-Options: deny
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-GitHub-Request-Id: 5B8E:5D46:1482FD9:17A41FD:64B225DE
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Encoding: gzip
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Accept-Ranges: bytes
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Sat, 22 Jul 2023 16:44:24 GMT
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Via: 1.1 varnish
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Served-By: cache-mrs10550-MRS
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Cache: HIT
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Cache-Hits: 1
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Timer: S1690044264.474185,VS0,VE4
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Vary: Authorization,Accept-Encoding,Origin
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Cross-Origin-Resource-Policy: cross-origin
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Fastly-Request-ID: ac2b189cdba7d2288032121203f70a8bda98a24f
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Expires: Sat, 22 Jul 2023 16:49:24 GMT
+19:44:23 DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Source-Age: 111
+19:44:23 DEBUG o.a.h.c.h.i.classic.MainClientExec - ex-0000000002 connection can be kept alive for 3 MINUTES
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffff8d][0xffffff98]Ko[0xffffffe3]8[0xc][0xffffffc7][0xffffffef][0xfffffffd][0x14][0x6][0xffffffe6]\EOJ*[0xffffffa0][0xffffffcb]>O[0xffffff8b]=[0xffffffec]~[0xffffff81]4qSc[0xffffffd2][0xffffffb8][0xffffffb0][0xffffffd3][0xffffffe9]`?[0xfffffffd]R[0xf][0xffffffca][0xffffff8a]2[0xb][0xffffffec]![0xffffff98][0xffffffe1][0xffffffcf][0xffffffb2]DR[0x12][0xfffffffd]g[0xffffffbf][0xc][0x7f][0xffffffbf]N[0xffffffeb][0xfffffff0]2[0xffffff9d][0xffffffc7][0xffffffe1]0_[0xffffffae][0xfffffffb][0xffffffe9][0xffffffb2][0xe][0xffffffd7][0xffffffd7]q[0xfffffff8]z[0xffffff99]?/[0xffffffc3]q[0xffffff99][0xffffffbe][0xffffff8d][0xffffffcb][0xffffff80][0xffffffbf]u[0xffffff9a][0xfffffff1][0xffffffc9]a~{[0xffffffdf]_[0xffffffa7]g[0x1c][0xfffffffd]9]_[0xffffffd3][0xffffffc8][0xffffffc3][0xffffffbc],[0xffffffe3][0xfffffffa]>_[0xffffff8e][0xffffffd3][0xffffffe5]4</[0xfffffff3][0xffffffe7][0xffffffba][0xffffffbd][0xfffffff2][0xfffffff0][0xfffffff0]e[0xfffffff8])[0xffffffa3][0xffffffa7][0xffffffe1][0xfffffff7]y>[0xffffffe1][0xffffff9b]?[0xffffffbf].[0xfffffff3][0xffffffdb]8[0xffffffec]/[0xffffffc7][0xfffffffc][0xffffffdf][0xffffffe9][0xffffffe3]mx[0x1c]~IK=[\r][0xffffff87][0xfffffff4]4/[0xffffff8c]/[0xffffffff]5[0x7f],[0xffffff87][0xfffffff1]ix[0xffffffbd]^[0xffffffdf][0xffffff9f]v[0xffffffbb][0xfffffff6]);[0xffffff94][0xffffffb7][0xffffffd9][0xffffffbc][0xffffff9c]vG[0xfffffff4][0xfffffff7]<[0xffffffef][0xffffff8f][0xffffffeb]C[0x1e]#[0xffffff84][0xe][0xfffffff8]c[0xffffff9c][0x19][0xffffffab][0xc][0xfffffff3][0xffffffbc]r[0xffffff85]\E[0xe]V2P[0xffffff95]K[0xffffffe4]2qa[0xffffff98][0xfffffff6][0xffffff95][0xb][0xffffffe4]"r[0x3][0xffffff8a][0xffffff81][0xffffffae][0xffffff9c]#[0xffffffe7][0xffffff91]k'[0xffffff98][0xffffffb5][0xffffffc4][0xffffffb9][0xf][0xfffffff8]K[0x1c][0xffffff97][0xffffffb7]u<w[0xffffffc8]][0xffffffe4][0xffffffca]xfE[0xffffffe5][0x16][0xffffffb9]M[0xffffff9c]k[0x6][0xffffffb2]r@[0xe][0xffffff91]K[0xffffffed][0x19]l[0xffffffe3][\r]r[0x13][0xffffffb9][0xfffffff0][0x6][0x1f]V[0xffffff8e][0xfffffff1][0xfffffff2][0x14]o[0xc][0xffffffc3]V[0xffffffff]9[0xffffffc6][0xffffffcb]S[0xffffffbc][0x1c]8[0x13]js[0x8][0x3][0xffffffe6])`[0xffffff8e][0xfffffff3]5[0xb]`[0xffffffc0]<[0x6][0xffffffac][0xffffffbd][0x11]Lo[0x1c][0x3][0xffffffe6]1`[0xffffffed]<0[0xffffffa0][0xffffff84]z[0x1f][0xffffffbc]OTk\[0xffffff9b][0xffffffa8][0xb]>[0x6][0xffffffab][0xffffffad]q[0xc][0xffffff97]!l[0xffffff83][0xffffff8f][0xffffffb1]j[0xfffffff0]r[0xffffffcb][0xffffff81][0xffffff87][0xffffffe0]!Q[0xffffffd0]L[0x1b][0xffffffa2]&x[0xffffff93][0xffffffa8]r[0xc]([0x1e][0xffffffaf][0xffffff83][0xffffffd7][0xffffff89]brp#[0x9][0xffffffab][0xffffffe0]c[0xffffff90][0xffffffda]X[0xffffffbb]m[0xffffffaa][0xffffff97][0xffffffc1][0xffffffcb]DqK1[0xffffffcb][0xffffff84]E[0xfffffff0])@[0xffffff8d]'[0x0]c%[0xffffffcc][0xffffff83]O[0xfffffff1]i[0xffffffc5][0xffffff99][0xffffffa4]<9[0x1f]\[0xffffff8a]O[0xffffffe1]?[0xffffff92]fv.[0xffffffb8][0x14][0xffffff9f][0xffffff92][0xffffff9a]y j[0xffffff83]K[0xffffffe1]I[0xffffffc7][0xffffff99]sD![0xffffffb8][0x14][0xffffff9e][0xffffffd4]8/[0xffffffa5][0xffffffc2][0xffffff99][0xffffffe0]Rx[0xffffffc2])[0xffffffe6][0xffffffc8]5[0xffffffa7][0xffffff83]K[0xffffffe1][0x9]m[0xffffff99][0xffffffa2][0x1c];[0x15]\[0xffffff8a].[0xffffffee][0xffffffa4][0xffffffa2]T8[0x11]\[\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0xffffff83]c[0xffffffe6][0xffffff85][0xffffffaa][0xffffffcb][0xfffffff1][0xffffffe0]b[0x18][0xffffffca][0xffffffa3]/x[0xffffff84][\n]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0xffffffb6]>X[0xffffff9f][0xffffffb0]6LU[0xffffffea][0xffffff82]u[0xffffff89][0xffffffe2][0xffffffd9][0xffffffc1]sE[0xffffffd8][0x6][0x1b][0x3]Q[0xe][0xfffffff0].[0xffffff90][0x1b][0x16][0xffffff82][0xffffff85]D[0xfffffff1][0xffffff80][0xb]Y[0xffffffe7]0[0xffffffc1][0xffffffc6]H[0xffffff94][0xffffffb5]x[0xffffffc0][0xffffffb6][0xffffffd1]:X[0xffffff9d][0xffffffb0][0xffffffc4][0xfffffff3]KP[0x5][0x1b]#Q[0xffffff80][0x1][0x1][0xffffffb9]le[0xffffff90][0xffffffb8][0xffffffa3]d[0xffffff89][0x1b][0xffffff8b]G[0xffffff8b][0x1c][0x3][0x1f]-[0xffffffda][0x1b]p[0xffffffd1][0xffffffa2][0xffffff8c][0xffffff82][0xffffff8d][0x16][0xffffffed]&@[0xffffffb4][0xffffffc8][0x19]0h[0xffffffd5][0x14][0xffffff81][0xffffff8e][0x16][0xffffffe5][0x1c]T[0xffffffb4]h=[0xffffff88][0xffffffbe][0xffffffa8][0xffffffba]^[0xfffffff4][0xffffffa5][0xffffffde][0x19][0xffffff88][0xffffffbe](uS[0xffffffd5][0xfffffffe][0xffffff98][0xffffffff][0xffffff99][0xffffffce][0xffffffe7][0xfffffffd][0xfffffff0][0xffffffdb][0xffffffb4][0xffffff8c]/[0xfffffff3][0xfffffff7][0xffffffa6][0xffffff94][0xffffff9d][0xffffffc6][0xffffffc3][0xffffffd7][0xfffffff9][0xffffff87][0xffffff95]l[0xffffffc5]Rv[0xffffffc2][0x2][0xfffffffa][0xfffffff1][0xffffffcc][0xffffffb0][0xffffffa4][0xffffffee][0xffffffde][0xfffffff2][0x14][0xffffffbb][0xffffffe6][0xffffff85][0xffffffdd]2[0xffffff9e][0xffffffc7][0xfffffffd]:[0xffffffae][0xf]/y^! `[0xffffffda]0w[0x1b]1wD[0xffffffdf][0x11]uG[0xffffffe4][0x1d][0x11]w[0xffffff84]G"[0xffffff99][0xffffffac][0x4][0xffffffab]Z"[0xffffffdb][0x18][0xffffffac]g=[0xffffffb1]w[0x4][0xffffffee][0xffffff88][0xffffffb9]#[0xffffffc9]g[0xffffffd1][0x12]uG[0xffffffe4][0x1d][0x11]w[0xffffff84]w[0xffffffc4][0xfffffffb][0x1e][0xffffffb8][0x1e][0xffffffd8][0x1e]@[0xf]L[0xf]zo}[0xffffffef][0xffffffac][0xffffffef]}[0xfffffff5][0xffffffbd][0xffffffab]>z[0xffffff8a]w[0xffffffa2][0x1][0xffffffec]<]>[0xffffffbe]g,[0x8];[0xffffffdf][0xffffff8d]s[0xffffffae][0x7][0xffffffb6][0x7][0xffffffd0][0x3][0xffffffd3][0x3][0xffffffdd][0xffffff83][0x18][0xffffff80]t[\r][0xffffff90]=[0xffffff88][0x1]H[0xffffffdb][0x0][0xffffffde][0x1][0xffffffeb]{[0xffffff90]<[0xffffff85][0x6][0xffffffd8][0x1e]@[0xf]L[0xf]t[0xf]T[0xf]d[0xf]D[0xf]x[0x7][0xffffffc0][0xfffffff7] yj[0x1a][0xffffff90]<[0xffffffd5][\r][0xffffff80][0x1e][0xffffff98][0x1e]$O[0xffffff9b][0xb][0x4][0xffffffaa][0x7][0xffffffc9][0xffffffd3][0xffffffe6][0xffffffd8]C[0xfffffff2][0xffffffb4]9[0x14][0xffffffc0];`|[0xf]\[0xf]l[0xf][0xffffff92][0xffffffa7][0xffffffbc][0x1][0xffffff86]@[[0xffffffb1][0xfffffffe]|[0x1f][0xffffff97]}S[0xffffffa7][0xffffffe6]h[0xffffffff][0xffffff9f]:[0xffffff95][0x6][0xffffffae][0xfffffff3][0xffffffcb][0xfffffff5]s[0xffffffbf][0xffffff8c][0xffffffd9]"[\r][0xffffffd6]W[0xffffffad][0xfffffff4]0I[0xffffff86]M[0xffffff83]aY[0xffffffc9][0x1c]of#[0xffffffc1][0xffffff84][0xffffffb4][0x5][0xffffffbb]V[0xffffff81]9[0xffffffa2][0xfffffff6]F[0x7f][0xffffff99]B[0xffffffa1]U_[0xffffffb8]P[0xffffffc1][0xffffffa6][0x15]_B[0x12][0xffffffd6][0xffffffad][0xfffffff6][0xfffffff2][0xffffffbe]P[0xffffffd5]*/[0xfffffffc]\g*[[0xffffffdd]%[0x4][\r][0x16][0xffffffad][0xffffffec][0xffffff8a][0xffffff8a]&c[0xffffffde][0xffffffaa].'2u[0xffffffbe][0xffffffd5]\[0x0][0xffffff85][0xffffffba]Npej[[0xffffffb9][0xffffff85][0xfffffffa]2Sh[0xffffffc5]VM[0x11]^[0xffffffe7][0x1b][0xffffffb1][0xffffff95][0xffffffa1]n[0xffffffb4][0xffffff96]+[0xffffff8e][0xffffffe1][0xffffffb5][0xffffffbe]QZ[0x19][0xffffffca][[0xffffffa1][0xffffff95][0xffffffa1]ht[0xffffff96][0xffffffa1][0xfffffff5]y#[0xffffffb3][0xffffffc8]U[0xffffffbc][0xffffffe6]7"+C[0xffffffd7]i[0xffffffac]Lm#[0xffffffb1],Ah[0x4][0xffffff96]+[0xffffffcb][0xffffffe3][0xffffffbd][0xffffffdf][0xfffffff4][0x15]y[0xffffff8f]w[0x7f][0xffffff93]W[0xffffff98][0xffffffe0]BU#[0xffffffaf][0xffffff80]&[0xffffff95][0xffffff8d][0xffffffba]re[0xffffffc3][0xffffffb1][0x10]l[0xffffffe2][0xffffffaa]n[0x16]V[0xffffff83]M\[0xffffffb9][0xffffffb2][0xffffffb1]X[0x11]6m[0xffffffe5][0xffffffcb][0xffffffa4]X[0x15][0x1a]i%J[0xffffffa8]X[0x1a]ZeU[0xffffffd6][0xffffffc2][0xfffffffa][0xffffffb0][0x9]+K[0xffffffb3][0xffffff9a]FW[0xffffffd1]Q[0xffffffc6]:[0xffffffb1][0xffffffa9][0xffffffaa]z8[0xffffffb1]X4[0xffffffaa]J[0x15]_[0xffffffb1]b4[0xffffffa2][0xffffffaa][0xffffffae]U[0xffffffc4]P2[0xffffff8c]o[0xffffff8d]"[0xffffff85][0xffffffb2]Q[0xffffff94]P6[0xffffff8a][0x10][0xffffffca]F[0xffffffd1]A[0xffffffd9](2([0x1b]E[0x5]e[0xffffffa3][0xffffff88][0xffffffa0]l[0xffffff88][0xffffffac]z[0xffffffb2][0xffffffc1][0x1b]CG[0xf][0xffffffc8]c[0x1d]=Pe[0x1d][0x1d]=[0xffffff90]%[0x19][0x1a][0xffffffb2]q#[0xffffff9b][0xffffffa6][0xffffffc3]2[0xffffffc7]Z2[0xfffffffc]z<[0xffffff8d]M5z[G[0x4][0xffffffff]Y[0xffffff8e][0xffffff8e][0xffffffe3][0xffffffb7][0xfffffff1][0x1c]geo4C[0xffffffaa]M[0xffffffe3][0xffffffe5][0xfffffff1]c[0xffffffdd]U[0xfffffff6][0x18]'[0xffffffd9]][0xffffffe7][0xfffffff9][0xffffffbc][0xffffffee]>[0xffffffc7][0xffffffe7]R[0xffffff9e][0x1e]"[0xffffffdd]:C[0xffffffe1][0xffffffb0]F[0xb]W([0xfffffff5][0xffffff85][0xffffffc2][0xffffffa2]l[0xffffffc5]LfJ][0xffffffa1][0xffffffb0]2[0x1d][0xffffffe4]L[0xffffffa9]'[0x14][0x0]"[0xfffffff6]l[0xffffff99]RG([0xc][0xffffff9e][0xf][0xffffffcc]^[0xffffffa2][0xffffffb5][0x1f][0x14]F8f[0xffffffcb]j[0xffffffb5][0x1b][0x14][0x1a]p^([0xffffff94]zAT[0xffffffd1][0xfffffff1]k[0xffffff9a]!5[0xffffff82]B[0xffffffd9][0xfffffff8][0xffffffed]*[0xffffff94][0xffffffda]@[0xffffffec][0xffffffe8][0x14]V[0xffffffb0]B[0xffffffa9][0x9][0x14][0x12]o[0xffffffaa][0xffffffa5][0x19][0xffffffa8][0x5]D[0xffffffcd][0xffffffae]k[0x10][0xffffffb5][0xffffffff][0x13][0x12][0xf].j[0xffffffea]L[0xffffffa9][0xfffffffb][0x13]R[0xfffffff0]m^[0xffffffea][0xfffffffd][0xffffff84][0xffffffc0]{[0xffffff85][0x1d]H[0xffffffa4][0xffffffd4][0xfffffff9][0xffffffa1][0x10][0xffffff8d][0xffffff85]"[0xffffffb3][0xffffffd2][0xfffffff7][0xffffff89]"
+19:44:23 DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0x18]]I[0xc]5}[0x18][0xffffff9a][0xffffffac][0xffffffac][0xffffffb4]|[0x18][0xffffff83][0xffffffae][0xffffffac]4|[0xffffffe8]U][0xffffff99][0xffffffda]=[0xffffff8f]5F[0xffffff89][0xffffff8c]J[0xffffffab][0xffffffe7]1[0xfffffff5][0xffffffaa][0xffffff8c]*}[0xffffff9e][0xffffffe7][0xffffffdb][0x2][0xffffffa5][0xffffffc7]s[0xffffffb1][0xffffffd2][0xffffff95][0x17]K[0x7f][0xffffffe7]0[0xffffffb0]L[0xffffffa8][0xffffffb7][0xffffff8b];[0xffffff9e]7[0xffffff86][0xfffffffa]:[0xffffff8b][0xffffffb9]-[0xffffffaf]QS[0x7][0xffffffe0][0xffffffcb][0xffffff96]PC[0x7]x$ [0xffffffe7][0xffffff82][0xffffffba]9[0x13][0x13]\F[0xffffff95]V[0xffffffce]$[0xffffffa9][0xffffff90][0x8][0xffffffb5]qX[0x1a]LY[0xf][0xffffffab]W[0xffffffae][0xffffff9e][0xffffff9e]|[0xffffffa2][0xffffffae]N[0x0]mU[0xffffffed][0xffffffe8]0b<w[0xffffff89][0xffffffd5]v.[0xffffff9e][0xffffffd9]LJ+'-[0x1d][0x1d][0xffffffea][0xffffffe2][0xffffffa4][0xffffffaa][0xffffffa4]tp[0xffffffb1],[0x16]R[0xffffff9a]7[0xffffffa1][0xffffffb0][0xffffffbb][0xffffffcd]H[0xffffffeb][0xfffffff0][0xffffffbe][0xffffff8c][0xffffff8f][0xffffffd3]e[0xffffffbd][0xffffffee][0xffffffcf][0xffffffe7][0xfffffff1][0xffffff98][0xffffffa1][0xc][0xfffffff8][0x1d][0xffffffb2][0xfffffff1][0xffffffef][0x7][0xffffffc9][0x14][0x1]K[0x18]H[0xffffff9f][0xffffffc3][0xffffffd7]<`[0xffffff9d][0xffffffc4][0xffffffaf]][0xffffffde][0xf][0xffffffe5][0x2]^,[0xffffffad]|6e,:[0xffffffb8][0xffffffd3].[0xffffff9f][0x11][0xffffff89][0xffffff87])n2[0xffffffd6][0xffffffa4][0x7f][0x1][0xffffff80][0xffffffd3][0xffffff80][0xffffffca][0xffffff80][0x12][0x0][0x0]"
+19:44:23 DEBUG o.a.h.c.h.i.c.InternalHttpClient - ep-0000000002 releasing valid endpoint
+19:44:23 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000002 releasing endpoint
+19:44:23 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000002 connection http-outgoing-0 can be kept alive for 3 MINUTES
+19:44:23 DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000002 connection released [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+19:44:23 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+19:44:23 DEBUG i.g.b.wdm.cache.ResolutionCache - Storing resolution firefox=115 in cache (valid until 20:44:23 22/07/2023 IDT)
+19:44:23 DEBUG i.g.b.wdm.cache.ResolutionCache - Storing resolution firefox115=0.33.0 in cache (valid until 19:44:23 23/07/2023 IDT)
+19:44:23 DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver geckodriver 0.33.0 found in cache
+19:44:23 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\heliu\.cache\selenium\geckodriver\win64\0.33.0\geckodriver.exe
+19:44:27 INFO  TestBase - Method loginProviderData is started
+19:44:27 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:44:27 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:44:28 INFO  manager.TestNgListener - Test loginProviderData invoked
+19:44:28 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:44:28 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:44:29 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:44:29 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:44:30 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:44:30 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:44:30 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:44:30 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:44:31 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:44:31 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:44:31 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:44:32 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:44:33 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:44:33 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:44:33 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:44:33 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:44:33 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='login-submit']
+19:44:33 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='login-submit'] is found
+19:44:33 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:44:37 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:44:38 INFO  manager.TestNgListener - Test loginProviderData successful
+19:44:38 INFO  TestBase - ==================================
+19:44:38 INFO  TestBase - Method loginProviderData is started
+19:44:38 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:44:38 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:44:38 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='header-member-menu-button']
+19:44:38 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='header-member-menu-button'] is found
+19:44:38 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='account-menu-logout']
+19:44:38 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='account-menu-logout'] is found
+19:44:39 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='logout-submit']
+19:44:39 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='logout-submit'] is found
+19:44:40 INFO  manager.TestNgListener - Test loginProviderData invoked
+19:44:40 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:44:42 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:44:43 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:44:43 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:44:43 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:44:43 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:44:43 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:44:43 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:44:44 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:44:44 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:44:45 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:44:45 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:44:45 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:44:45 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:44:45 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='login-submit']
+19:44:45 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='login-submit'] is found
+19:44:45 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:44:49 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:44:49 INFO  manager.TestNgListener - Test loginProviderData successful
+19:44:49 INFO  TestBase - ==================================
+19:44:49 INFO  TestBase - Method loginTest is started
+19:44:49 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:44:49 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:44:49 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='header-member-menu-button']
+19:44:49 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='header-member-menu-button'] is found
+19:44:49 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='account-menu-logout']
+19:44:49 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='account-menu-logout'] is found
+19:44:50 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='logout-submit']
+19:44:50 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='logout-submit'] is found
+19:44:50 INFO  manager.TestNgListener - Test loginTest invoked
+19:44:50 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:44:52 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:44:52 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:44:52 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:44:52 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:44:52 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:44:53 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:44:53 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:44:53 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:44:53 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:44:54 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:44:54 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:44:54 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:44:54 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:44:54 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:44:54 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:44:55 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='login-submit']
+19:44:55 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='login-submit'] is found
+19:44:55 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:44:58 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:44:58 INFO  manager.TestNgListener - Test loginTest successful
+19:44:58 INFO  TestBase - ==================================
+19:44:58 INFO  TestBase - Method loginTest is started
+19:44:58 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:44:58 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:44:58 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='header-member-menu-button']
+19:44:58 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='header-member-menu-button'] is found
+19:44:58 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='account-menu-logout']
+19:44:58 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='account-menu-logout'] is found
+19:44:59 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='logout-submit']
+19:44:59 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='logout-submit'] is found
+19:44:59 INFO  manager.TestNgListener - Test loginTest invoked
+19:44:59 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:45:01 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:45:02 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:45:02 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:45:02 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:45:02 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:45:03 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:03 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:04 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:04 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:04 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:04 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:04 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='login-submit']
+19:45:04 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='login-submit'] is found
+19:45:04 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:45:07 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:45:07 INFO  manager.TestNgListener - Test loginTest successful
+19:45:07 INFO  TestBase - ==================================
+19:45:07 INFO  TestBase - Method loginTestPasswordInput is started
+19:45:07 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:45:07 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:45:07 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='header-member-menu-button']
+19:45:08 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='header-member-menu-button'] is found
+19:45:08 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='account-menu-logout']
+19:45:08 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='account-menu-logout'] is found
+19:45:08 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='logout-submit']
+19:45:08 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='logout-submit'] is found
+19:45:09 INFO  manager.TestNgListener - Test loginTestPasswordInput invoked
+19:45:09 INFO  TestBase - start test loginTestPasswordInput
+19:45:09 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:45:10 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:45:11 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:45:11 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:45:11 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:45:11 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:45:11 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:11 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:12 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:12 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:13 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:13 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:13 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:13 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:13 INFO  manager.TestNgListener - Test loginTestPasswordInput successful
+19:45:13 INFO  TestBase - ==================================
+19:45:13 INFO  TestBase - Method loginTestPositive is started
+19:45:13 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:45:13 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:45:13 INFO  manager.TestNgListener - Test loginTestPositive invoked
+19:45:13 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:45:13 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:45:14 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:45:14 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:45:14 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:45:14 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:45:15 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:15 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:16 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:16 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:16 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:16 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:16 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='login-submit']
+19:45:16 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='login-submit'] is found
+19:45:16 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:45:19 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:45:19 INFO  manager.TestNgListener - Test loginTestPositive successful
+19:45:19 INFO  TestBase - ==================================
+19:45:19 INFO  TestBase - Method loginTestPositive is started
+19:45:19 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:45:19 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:45:19 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='header-member-menu-button']
+19:45:19 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='header-member-menu-button'] is found
+19:45:19 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='account-menu-logout']
+19:45:19 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='account-menu-logout'] is found
+19:45:20 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='logout-submit']
+19:45:20 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='logout-submit'] is found
+19:45:20 INFO  manager.TestNgListener - Test loginTestPositive invoked
+19:45:20 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:45:22 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:45:22 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:45:22 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:45:22 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:45:22 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:45:23 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:23 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:23 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:23 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:24 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:24 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:24 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:24 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:24 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='login-submit']
+19:45:24 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='login-submit'] is found
+19:45:25 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:45:27 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:45:27 INFO  manager.TestNgListener - Test loginTestPositive successful
+19:45:27 INFO  TestBase - ==================================
+19:45:27 INFO  TestBase - Method loginTestPositiveProperties is started
+19:45:27 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:45:27 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:45:27 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='header-member-menu-button']
+19:45:27 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='header-member-menu-button'] is found
+19:45:28 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='account-menu-logout']
+19:45:28 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='account-menu-logout'] is found
+19:45:28 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='logout-submit']
+19:45:28 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='logout-submit'] is found
+19:45:29 INFO  manager.TestNgListener - Test loginTestPositiveProperties invoked
+19:45:29 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:45:31 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:45:31 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:45:31 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:45:32 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:45:32 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:45:33 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:33 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:34 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:34 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:34 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:34 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:34 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='login-submit']
+19:45:34 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='login-submit'] is found
+19:45:35 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:45:38 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:45:38 INFO  manager.TestNgListener - Test loginTestPositiveProperties successful
+19:45:38 INFO  TestBase - ==================================
+19:45:38 INFO  TestBase - Method loginWithIncorrectPassword is started
+19:45:38 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:45:38 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:45:38 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='header-member-menu-button']
+19:45:38 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='header-member-menu-button'] is found
+19:45:38 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@data-testid='account-menu-logout']
+19:45:38 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@data-testid='account-menu-logout'] is found
+19:45:39 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='logout-submit']
+19:45:39 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='logout-submit'] is found
+19:45:39 INFO  manager.TestNgListener - Test loginWithIncorrectPassword invoked
+19:45:39 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:45:41 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:45:41 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:45:41 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:45:42 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:45:42 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:45:42 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:42 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:42 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:43 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:43 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:43 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:43 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:43 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:43 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='login-submit']
+19:45:43 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='login-submit'] is found
+19:45:44 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //div[@data-testid='form-error--content']/span/span
+19:45:44 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //div[@data-testid='form-error--content']/span/span is found
+19:45:44 INFO  manager.TestNgListener - Test loginWithIncorrectPassword successful
+19:45:44 INFO  TestBase - ==================================
+19:45:44 INFO  TestBase - Method loginWithIncorrectPassword is started
+19:45:44 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:45:44 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:45:44 INFO  manager.TestNgListener - Test loginWithIncorrectPassword invoked
+19:45:44 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:45:44 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:45:45 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:45:45 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:45:45 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:45:45 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:45:46 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:46 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:47 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:47 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:47 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:45:47 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:45:47 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='login-submit']
+19:45:47 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='login-submit'] is found
+19:45:47 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //div[@data-testid='form-error--content']/span/span
+19:45:47 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //div[@data-testid='form-error--content']/span/span is found
+19:45:47 INFO  manager.TestNgListener - Test loginWithIncorrectPassword successful
+19:45:47 INFO  TestBase - ==================================

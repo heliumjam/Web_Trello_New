@@ -1,0 +1,5 @@
+19:20:06 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome=114 in cache (valid until 20:04:06 22/07/2023 IDT)
+19:20:06 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome114=114.0.5735.90 in cache (valid until 19:04:06 23/07/2023 IDT)
+19:20:06 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+19:20:06 DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver chromedriver 114.0.5735.90 found in cache
+19:20:06 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\heliu\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe

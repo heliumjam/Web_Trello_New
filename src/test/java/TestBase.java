@@ -30,7 +30,8 @@ public class TestBase {
 
     @AfterMethod(alwaysRun = true)
     public void end(){
-        logger.info("=====================end==method======================== ");
+        logger.info("==================================");
     }
 
 }
+

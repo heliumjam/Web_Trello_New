@@ -1,0 +1,67 @@
+19:29:59 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome=114 in cache (valid until 20:04:06 22/07/2023 IDT)
+19:29:59 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome114=114.0.5735.90 in cache (valid until 19:04:06 23/07/2023 IDT)
+19:29:59 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+19:29:59 DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver chromedriver 114.0.5735.90 found in cache
+19:29:59 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\heliu\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+19:30:01 INFO  TestBase - Method loginProviderData is started
+19:30:01 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:30:01 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:30:01 INFO  manager.TestNgListener - Test loginProviderData invoked
+19:30:01 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:30:01 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:30:02 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:30:02 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:30:03 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:30:03 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:30:03 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:30:03 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:30:03 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:30:05 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:30:05 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:30:05 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:30:05 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //button[@id='login-submit']
+19:30:05 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //button[@id='login-submit'] is found
+19:30:05 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:30:06 INFO  manager.WebDriverListener - Something went wrong!
+19:30:06 INFO  manager.WebDriverListener - Cannot locate an element using xpath=//span[@data-testid='home-team-tab-name']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIRI', ip: '10.0.1.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: driver.version: EventFiringWebDriver
+19:30:06 INFO  manager.WebDriverListener - org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//span[@data-testid='home-team-tab-name']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIRI', ip: '10.0.1.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: driver.version: EventFiringWebDriver
+19:30:06 INFO  manager.TestNgListener - Test loginProviderData failed: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIRI', ip: '10.0.1.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\heliu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 95135be71cfc48d168819dcfc07ee744
+19:30:06 INFO  TestBase - ==================================
+19:30:06 INFO  TestBase - Method loginProviderData is started
+19:30:06 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:30:06 INFO  manager.WebDriverListener - Something went wrong!
+19:30:06 INFO  manager.WebDriverListener - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIRI', ip: '10.0.1.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\heliu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 95135be71cfc48d168819dcfc07ee744
+*** Element info: {Using=xpath, value=//span[@data-testid='home-team-tab-name']}
+19:30:06 INFO  manager.WebDriverListener - org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIRI', ip: '10.0.1.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\heliu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 95135be71cfc48d168819dcfc07ee744
+*** Element info: {Using=xpath, value=//span[@data-testid='home-team-tab-name']}
+19:30:06 INFO  manager.TestNgListener - Test loginProviderData invoked
+19:30:06 INFO  TestBase - ==================================

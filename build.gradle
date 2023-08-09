@@ -28,21 +28,26 @@ test {
     useTestNG()
 }
 
-task myTest(type: Test) {
-    useTestNG() {
+task myTest (type:Test){
+    useTestNG(){
         def groups = System.getProperty('groups')
-        if(groups != null){
+        if (groups != null){
             includeGroups groups
         }
 
         def suite = System.getProperty('suite','')
-        if(suite.equals('login')) {
-            suites 'src/test/resources/testng.xml'
-        } else {
+        if (suite.equals('login')){
+            suites '/src/test/resources/testng.xml'
+        }
+        else {
             suites 'src/test/resources/mainpage.xml'
         }
     }
+    if(project.hasProperty('target')){
+        systemProperty 'target', "${target}"
+    }
+
     if(project.hasProperty('browser')){
-        systemProperty 'browser', "$browser"
+        systemProperty 'browser', "${browser}"
     }
 }

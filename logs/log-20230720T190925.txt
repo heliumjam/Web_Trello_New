@@ -1,0 +1,28 @@
+19:09:26 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution firefox=115 in cache (valid until 20:05:40 20/07/2023 IDT)
+19:09:26 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution firefox115=0.33.0 in cache (valid until 19:05:40 21/07/2023 IDT)
+19:09:26 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.33.0 (resolved driver for Firefox 115)
+19:09:26 DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver geckodriver 0.33.0 found in cache
+19:09:26 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\heliu\.cache\selenium\geckodriver\win64\0.33.0\geckodriver.exe
+19:09:30 INFO  TestBase - Method loginTestPasswordInput is started
+19:09:30 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //span[@data-testid='home-team-tab-name']
+19:09:30 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //span[@data-testid='home-team-tab-name'] is found
+19:09:30 INFO  manager.TestNgListener - Test loginTestPasswordInput invoked
+19:09:30 INFO  TestBase - start test loginTestPasswordInput
+19:09:30 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //a[contains(text(), 'Log in')]
+19:09:30 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //a[contains(text(), 'Log in')] is found
+19:09:31 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='user']
+19:09:31 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='user'] is found
+19:09:32 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@id='login']
+19:09:32 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@id='login'] is found
+19:09:32 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:09:32 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:09:32 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:09:32 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:09:33 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:09:34 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:09:34 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:09:34 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:09:34 INFO  manager.WebDriverListener - Start searching element ----> By.xpath: //input[@name='password']
+19:09:34 INFO  manager.WebDriverListener - Element with locator ----> By.xpath: //input[@name='password'] is found
+19:09:34 INFO  manager.TestNgListener - Test loginTestPasswordInput successful
+19:09:34 INFO  TestBase - ==================================

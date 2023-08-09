@@ -1,0 +1,6 @@
+19:21:41 INFO  TestBase - Method loginTestPasswordInput is started
+19:21:41 INFO  manager.TestNgListener - Test loginTestPasswordInput invoked
+19:21:41 INFO  TestBase - ==================================
+19:21:41 INFO  TestBase - Method loginTestPositiveProperties is started
+19:21:41 INFO  manager.TestNgListener - Test loginTestPositiveProperties invoked
+19:21:41 INFO  TestBase - ==================================

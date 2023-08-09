@@ -18,4 +18,5 @@ public class MainPageTest extends TestBase{
         Assert.assertTrue(app.getHelperMainPage().validateH1Correct());
     }
 
+
 }

@@ -16,7 +16,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.time.Instant;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
@@ -35,9 +40,14 @@ public class ApplicationManager {
 
     String browser;
 
+    Properties properties;
 	public ApplicationManager(String browser) {
+        properties = new Properties();
 			this.browser = browser;
 		}
+
+    public String getEmail() {return properties.getProperty("email"); }
+    public String getPassword() { return properties.getProperty("password"); }
 
     public WebDriverWait getWait() {
         return wait;
@@ -53,6 +63,14 @@ public class ApplicationManager {
 
     @BeforeSuite
     public void init(){
+        String target = System.getProperty("target", "prod");
+        String path = String.format("src/test/resources/%s.properties", target);
+
+        try (FileReader fr = new FileReader(new File(path))){
+            properties.load(fr);
+        } catch (IOException e) {
+
+        }
         //   driver = new ChromeDriver();
 		//  driver = new EventFiringWebDriver(new ChromeDriver());
 
@@ -66,15 +84,16 @@ public class ApplicationManager {
 			// driver = new EventFiringWebDriver(new FirefoxDriver(firefoxOptions));
 
 // changed for WD Listener:
-       if(browser.equals(BrowserType.CHROME)) {
+        if(browser.equals(BrowserType.CHROME)) {
             ChromeOptions chromeOptions = new ChromeOptions();
             WebDriverManager.chromedriver().setup();
+            // changed for WD Listener
             driver = new EventFiringWebDriver(new ChromeDriver(chromeOptions));
         } else if (browser.equals(BrowserType.FIREFOX)) {
             FirefoxOptions firefoxOptions = new FirefoxOptions();
             WebDriverManager.firefoxdriver().setup();
             driver = new EventFiringWebDriver(new FirefoxDriver(firefoxOptions));
-        }	
+        }
 
 
         driver.register(new WebDriverListener());
@@ -82,7 +101,7 @@ public class ApplicationManager {
         helperLogout = new HelperLogout(driver);
         helperMainPage = new HelperMainPage(driver);
         driver.manage().window().maximize();
-        driver.navigate().to("https://trello.com/");
+        driver.navigate().to(properties.getProperty("url"));
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 90);
 
@@ -101,7 +120,7 @@ public class ApplicationManager {
 
  //   @AfterSuite
     public void tearDown(){
-        driver.quit();
+      driver.quit();
     }
 
 }
